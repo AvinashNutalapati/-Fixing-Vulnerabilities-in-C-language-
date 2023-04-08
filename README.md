@@ -11,12 +11,6 @@ https://github.com/AvinashNutalapati/cy5130projet5.git
 
 
 
-
-
-
-
-
-
 # PART-1
 
  
@@ -28,12 +22,9 @@ If both arguments are valid, the script extracts the NUID from the first argumen
 
 
 
-
-
-
 # Code 09:
 
-## HTML Report of Bugs:
+
 
  
 ## Explanation of changes:
@@ -63,7 +54,7 @@ Output & Fixed Code:
 
 # Code 10:
 
-## HTML Report of Bugs:
+
  
 
 ## Explanation of changes:
@@ -78,13 +69,13 @@ Explanation of the changes made:
 The bug "Dereference of null pointer" in codeN1110.c on line 13, column 4 maps to the Common Weakness Enumeration (CWE) 476: Null Pointer Dereference.
 CWE-476 is a common weakness that occurs when a program dereferences a null pointer, which can cause the program to crash or exhibit undefined behavior. In this case, the null pointer is dereferenced without being checked for nullness, which can lead to a crash.
 
-## Output & Fixed Code:
+
 
  
 
 # Code 11:
 
-## HTML Report of Bugs:
+
  
 
 
@@ -104,7 +95,7 @@ The following are the vulnerabilities present in the code and their correspondin
 •	Memory error: This warning indicates a potential memory allocation error in the code. CWE-119: Improper Restriction of Operations within the Bounds of a Memory Buffer is a relevant CWE for this warning.
 •	Memory leak: This warning indicates a potential memory leak in the code. CWE-401: Improper Release of Memory Before Removing Last Reference is a relevant CWE for this warning.
 
-## Output & Fixed Code:
+
 
  
 
@@ -112,7 +103,7 @@ The following are the vulnerabilities present in the code and their correspondin
 
 # Code 12:
 
-## HTML Report of Bugs:
+
  
 ## Explanation of changes:
 The issue reported by the C-Lang static analyzer is related to the uninitialized variable px, which is used as a condition for the if statement without being initialized. This can lead to undefined behavior since the value of px is not deterministic.
@@ -128,7 +119,7 @@ The issue reported by the C-Lang static analyzer can be mapped to the following 
 This CWE describes the use of uninitialized variables, which can lead to undefined behavior and unexpected program output, such as the branch condition evaluating to a garbage value in this case.
 The recommended solution for CWE-457 is to initialize all variables before they are used in the program, which prevents them from containing garbage values that can lead to undefined behavior.
 
-## Output & Fixed Code:
+
  
 
 
@@ -143,7 +134,7 @@ The recommended solution for CWE-457 is to initialize all variables before they 
 
 # Code 13:
 
-## HTML Report of Bugs:
+
  
 ## Explanation of changes:
 
@@ -154,12 +145,12 @@ This vulnerability can lead to undefined behavior or a segmentation fault.
 The corresponding CWE (Common Weakness Enumeration) for this type of vulnerability is CWE-415: Double Free.
 
 
-## Output & Fixed Code:
+
  
 
 # Code 14:
 
-## HTML Report of Bugs: No Bugs Found
+ No Bugs Found
 ## Secure issues with code:
 
 Hardcoded secrets: The secret key used for encryption/decryption is hardcoded in the program, which is a security risk. An attacker who gains access to the code can easily identify the key and use it to decrypt sensitive information. This can lead to data theft and other security breaches. This issue can be fixed by using a secure key management system that keeps the key separate from the code and provides secure access controls.
@@ -204,12 +195,12 @@ The new code now allows users to choose between adding a new username to the use
 •	CWE-362: Concurrent Execution using Shared Resource with Improper Synchronization ('Race Condition') (fixed by using file locks to prevent concurrent access to the file)
 •	CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion') (fixed by limiting the input size for the new username to prevent buffer overflow)
 
-## Output & Fixed Code:
+
  
 
 # Code 15:
 
-## HTML Report of Bugs:
+
  
 
 ## Explanation of changes:
@@ -224,12 +215,12 @@ CWE-457: Use of Uninitialized Variable
 The CWE-457 category is used to describe software faults that occur when a program accesses an uninitialized variable or value. In the given code, the function pointer foo is uninitialized, and therefore the behavior of the code is undefined when foo() is called. The uninitialized function pointer could potentially point to any memory location, leading to unexpected behavior or even a crash.
 To fix this issue, the function pointer should be initialized before it is called.
 
-## Output & Fixed Code:
+
  
 
 # Code 16:
 
-## HTML Report of Bugs:
+
  
 ## Explanation of changes:
 The user_supplied_string parameter in copy_input should be declared as const since it is not modified in the function.
@@ -246,12 +237,12 @@ The C-Lang report indicates a logic error caused by an uninitialized argument va
 This vulnerability is associated with CWE-457: Use of Uninitialized Variable, which occurs when a program uses a variable without first initializing it to a known value. In this case, the uss pointer in the main function is not initialized before it is passed as an argument to the read function. As a result, the behavior of the program is undefined and may result in a crash or other unexpected behavior.
 To fix this issue, the uss pointer should be initialized to a valid memory location before it is passed to the read function.
 
-## Output & Fixed Code:
+
  
 
 # Code 17:
 
-## HTML Report of Bugs:
+
  
 
 ## Explanation of changes:
@@ -265,7 +256,7 @@ Here are the mappings of the identified issues in the code to their respective C
 3.	Potential integer overflow: In the original code, m * n * sizeof(struct board_square_t) could potentially overflow for large values of m and n. However, since we've added the check for m and n against MAX_DIM, this should not be an issue.
 4.	Error handling for scanf: The code did not handle the possibility that scanf could return EOF if there was an error or end of file was reached. In the fixed code, we check for this and print an error message and exit the program if it occurs.
 
-### Output & Fixed Code:
+#
  
 
 
