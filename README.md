@@ -1,11 +1,4 @@
-# cy5130projet5
-CY 5310
-Project 5 – Secure Coding. Input validation and static analysis
 
-  
-
-Prof. Dr. Jose Sierra
- Submitted by:
 Avinash Nutalapati
 https://github.com/AvinashNutalapati/cy5130projet5.git
 
